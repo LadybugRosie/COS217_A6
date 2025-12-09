@@ -9,7 +9,7 @@ stored x30
 
 
 /* FUNCTION COMMENT */
-int main(int argc) {
+int main() {
     unsigned int uiData;
     char name[] = "David";
 
