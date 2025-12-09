@@ -87,8 +87,8 @@ unsigned int MiniAssembler_adr(unsigned int uiReg, unsigned long ulAddr,
 unsigned int MiniAssembler_strb(unsigned int uiFromReg,
    unsigned int uiToReg)
 {
-    /* Base instruction code with 0 offset */
-    unsigned int uiInstruction = 0x38000C00;
+    /* Base instruction code with 0 offset (strb w0, [x0]) */
+    unsigned int uiInstruction = 0x39000000;
 
     /* Set register to be loaded from in bits [0...4] */
     setField(uiFromReg, 0, &uiInstruction, 0, 5);
@@ -108,7 +108,7 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
     unsigned int uiInstruction = 0x14000000;
 
     /* Calculate the shifted offset */
-    signed int label = (ulAddr - ulAddrOfThisInstr) / 4;
+    int label = (int) (((long) ulAddr - (long) ulAddrOfThisInstr) / 4 );
 
     /* Sets label in bits [0...25] */
     setField(label, 0, &uiInstruction, 0, 26);
