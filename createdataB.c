@@ -1,0 +1,12 @@
+/*
+Produces a file called dataB with the student name, a nullbyte,
+padding to overrun the stack, and the address of the instruction
+in main to get a B, the latter of which will overwrite getName's
+stored x30
+*/
+
+
+/* FUNCTION COMMENT */
+int main(int argc) {
+    printf("Hello World\n");
+}
