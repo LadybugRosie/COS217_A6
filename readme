@@ -17,6 +17,20 @@ information given in the "Policies" web page (also available on armlab
 in the file ~cos217/AuthorizedSourcesList ) to this section of the
 readme file, and edit it as appropriate.
 
+COS 217 lecture materials.
+COS 217 precept materials.
+COS 217 website.
+COS 217 textbooks.
+The man pages on the armlab cluster.
+COS 217 staff in office hours.
+COS 217 staff in private meeting.
+COS 217 staff via email.
+COS 217 staff and/or current students on Ed.
+Lab TAs during Lab TA hours.
+These current COS 217 students, subject to the communications policy:
+Alyssa Paolicchi
+
+These non-COS 217 students, subject to the communications policy:
 
 
 
@@ -27,7 +41,15 @@ information given in the "Policies" web page (also available on armlab
 in the file ~cos217/AuthorizedSourcesList ) to this section of the
 readme file, and edit it as appropriate.
 
-
+COS 217 lecture materials.
+COS 217 precept materials.
+COS 217 website.
+COS 217 textbooks.
+The man pages on the armlab cluster.
+COS 217 staff and/or current students on Ed.
+Lab TAs during Lab TA hours.
+These current COS 217 students, subject to the communications policy:
+David Hovey
 
 ------------------------------------------------------------------------
 Student 1: What unauthorized sources of information did you use to
@@ -83,7 +105,7 @@ Regulations in Princeton's Rights, Rules, Responsibilities guide,
 and the COS 217 Generative AI policy, disclose and describe how you
 used AI in completing this assignment:
 
-
+Debugging, 
 
 ------------------------------------------------------------------------
 Student 1: What is your assessment of the assignment? Was it helpful?
@@ -95,7 +117,9 @@ Was it fun?
 Student 2: What is your assessment of the assignment? Was it helpful?
 Was it fun?
 
-
+It was interesting and felt fun to be able to "hack." One of the most
+intriguing assignments of the course. It was useful to learn more about
+machine language in ARMv8 and the memory structure here.
 
 ------------------------------------------------------------------------
 (optional) What information can you provide about your submission that
