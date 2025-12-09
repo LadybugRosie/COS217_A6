@@ -32,7 +32,7 @@ int main() {
     char padding[] = "gggggggggggggggggggggggg";
 
     /* Address of first adr... instruction */
-    unsigned long returnAddress = 0x42005e;
+    unsigned long returnAddress = 0x420060;
 
     FILE *psFile = fopen("dataA", "w");
 
