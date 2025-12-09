@@ -46,8 +46,17 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
 
 unsigned int MiniAssembler_mov(unsigned int uiReg, int iImmed)
 {
-   /* Your code here */
+    /* Base instruction with sf == 0 to move into a Wd register
+       and hw == 0 for no left shift */
+    unsigned int uiInstruction = 0x52800000;
 
+    /* Set Wd into bits [0...4] */
+    setField(uiReg, 0, &uiInstruction, 0, 5);
+
+    /* Set imm16 (immediate) into bits [5...20] */
+    setField(iImmed, 0, &uiInstruction, 5, 16);
+
+    return uiInstruction;
 }
 
 /*--------------------------------------------------------------------*/
