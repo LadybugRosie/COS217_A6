@@ -59,5 +59,8 @@ int main() {
 
     /* Write return address to the final printf statements */
     fwrite(&returnAddress, sizeof(long), 1, psFile);
+
+    fclose(psFile);
+
     return 0;
 }
