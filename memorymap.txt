@@ -115,54 +115,54 @@ Data Memory:
 BSS Memory:
   Address (in hex)  |  Variable Name       |  A Description    |  A+ Description
 ------------------------------------------------------------------------------------
-  0x420058          |  name[0]             |                   |
-  0x420059          |  name[1]             |                   |
-  0x42005A          |  name[2]             |                   |
-  0x42005B          |  name[3]
-  0x42005C          |  name[4]
-  0x42005D          |  name[5]
-  0x42005E          |  name[6]
-  0x42005F          |  name[7]
-  0x420060          |  name[8]
-  0x420061          |  name[9]
-  0x420062          |  name[10]
-  0x420063          |  name[11]
-  0x420064          |  name[12]
-  0x420065          |  name[13]
-  0x420066          |  name[14]
-  0x420067          |  name[15]
-  0x420068          |  name[16]
-  0x420069          |  name[17]
-  0x42006A          |  name[18]
-  0x42006B          |  name[19]
-  0x42006C          |  name[20]
-  0x42006D          |  name[21]
-  0x42006E          |  name[22]
-  0x42006F          |  name[23]
-  0x420070          |  name[24]
-  0x420071          |  name[25]
-  0x420072          |  name[26]
-  0x420073          |  name[27]
-  0x420074          |  name[28]
-  0x420075          |  name[29]
-  0x420076          |  name[30]
-  0x420077          |  name[31]
-  0x420078          |  name[32]
-  0x420079          |  name[33]
-  0x42007A          |  name[34]
-  0x42007B          |  name[35]
-  0x42007C          |  name[36]
-  0x42007D          |  name[37]
-  0x42007E          |  name[38]
-  0x42007F          |  name[39]
-  0x420080          |  name[40]
-  0x420081          |  name[41]
-  0x420082          |  name[42]
-  0x420083          |  name[43]
-  0x420084          |  name[44]
-  0x420085          |  name[45]
-  0x420086          |  name[46]
-  0x420087          |  name[47]
+  0x420058          |  name[0]             | D                 | D
+  0x420059          |  name[1]             | a                 | a
+  0x42005A          |  name[2]             | v                 | v
+  0x42005B          |  name[3]             | i                 | i
+  0x42005C          |  name[4]             | d                 | d
+  0x42005D          |  name[5]             | \0                | \0
+  0x42005E          |  name[6]             | \0        
+  0x42005F          |  name[7]             | \0
+  0x420060          |  name[8]             | adr
+  0x420061          |  name[9]             | adr
+  0x420062          |  name[10]            | adr
+  0x420063          |  name[11]            | adr
+  0x420064          |  name[12]            | mov
+  0x420065          |  name[13]            | mov
+  0x420066          |  name[14]            | mov
+  0x420067          |  name[15]            | mov
+  0x420068          |  name[16]            | strb
+  0x420069          |  name[17]            | strb
+  0x42006A          |  name[18]            | strb
+  0x42006B          |  name[19]            | strb
+  0x42006C          |  name[20]            | b
+  0x42006D          |  name[21]            | b
+  0x42006E          |  name[22]            | b
+  0x42006F          |  name[23]            | b
+  0x420070          |  name[24]            |
+  0x420071          |  name[25]            |
+  0x420072          |  name[26]            |
+  0x420073          |  name[27]            |
+  0x420074          |  name[28]            |
+  0x420075          |  name[29]            |
+  0x420076          |  name[30]            |
+  0x420077          |  name[31]            |
+  0x420078          |  name[32]            |
+  0x420079          |  name[33]            |
+  0x42007A          |  name[34]            |
+  0x42007B          |  name[35]            |
+  0x42007C          |  name[36]            |
+  0x42007D          |  name[37]            |
+  0x42007E          |  name[38]            |
+  0x42007F          |  name[39]            |
+  0x420080          |  name[40]            |
+  0x420081          |  name[41]            |
+  0x420082          |  name[42]            |
+  0x420083          |  name[43]            |
+  0x420084          |  name[44]            |
+  0x420085          |  name[45]            |
+  0x420086          |  name[46]            |
+  0x420087          |  name[47]            |
 
 
 Stack Memory:
