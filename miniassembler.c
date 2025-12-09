@@ -111,6 +111,7 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
     int label = (int) (((long) ulAddr - (long) ulAddrOfThisInstr) / 4 );
 
     /* Sets label in bits [0...25] */
-    setField(label, 0, &uiInstruction, 0, 26);
+    setField((unsigned int) label, 0, &uiInstruction, 0, 26);
 
+    return uiInstruction;
 }
