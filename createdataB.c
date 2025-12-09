@@ -13,7 +13,7 @@ int main() {
     unsigned int uiData;
     char name[] = "David";
 
-    file *psFile = fopen("davidBgrade.txt", "w");
+    FILE *psFile = fopen("davidBgrade.txt", "w");
 
     if (!psFile) {
         perror("fopen did not return a valid pointer");
