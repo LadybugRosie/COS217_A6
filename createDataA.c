@@ -14,7 +14,7 @@ int main() {
     char name[] = "David";
 
     /* Alignment padding (4-byte instruction alignment) */
-    char alignment[] = "\0";
+    char alignment[] = "g";
 
     /* adr x0, grade */
     unsigned int adrInstr;
