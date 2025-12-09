@@ -10,9 +10,8 @@ stored x30
 
 /* FUNCTION COMMENT */
 int main() {
-    unsigned int uiData;
     char name[] = "David";
-    char whitespace[] = "676767676767676767676767676767676767676767";
+    char whitespace[] = "gggggggggggggggggggggggggggggggggggggggggg";
     long returnAddress = 0x400890;
 
     FILE *psFile = fopen("davidBgrade.txt", "w");
