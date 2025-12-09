@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 90)
 add_executable(COS217_A6
         createdataB.c
         miniassembler.c
-        miniassembler.c)
+        miniassembler.c
+        createDataA.c)
