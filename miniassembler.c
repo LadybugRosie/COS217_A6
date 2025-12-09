@@ -87,8 +87,15 @@ unsigned int MiniAssembler_adr(unsigned int uiReg, unsigned long ulAddr,
 unsigned int MiniAssembler_strb(unsigned int uiFromReg,
    unsigned int uiToReg)
 {
-   /* Your code here */
+    unsigned int uiInstruction = 0x38000C00;
 
+    /* Set register to be loaded from in bits [0...4] */
+    setField(uiFromReg, 0, &uiInstruction, 0, 5);
+
+    /* Set register to be loaded to in bits [5...9] */
+    setField(uiToReg, 0, &uiInstruction, 5, 5);
+
+    return uiInstruction;
 }
 
 /*--------------------------------------------------------------------*/
