@@ -19,7 +19,15 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
                      unsigned int *puiDest, unsigned int uiDestStartBit,
                      unsigned int uiNumBits)
 {
-   /* Your code here */
+    unsigned int uiTotalBits = sizeof(unsigned int) * 8;
+    unsigned int bitmask = 0x0;
+    /* Nothing to do in this case */
+    if (uiNumBits == 0) return;
+
+    if (uiNumBits >= uiTotalBits) {
+        bitmask = ~0u;
+    }
+
 
 }
 
