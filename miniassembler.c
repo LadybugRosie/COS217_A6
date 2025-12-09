@@ -21,13 +21,24 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
 {
     unsigned int uiTotalBits = sizeof(unsigned int) * 8;
     unsigned int bitmask = 0x0;
-    /* Nothing to do in this case */
+
+    /* Trivial case */
     if (uiNumBits == 0) return;
 
+    /* Set the bitmask to the correct number of bits */
     if (uiNumBits >= uiTotalBits) {
         bitmask = ~0u;
     }
 
+    else {
+        bitmask = (1u << uiNumBits) - 1u;
+    }
+
+    /* Copy the correct set of bits from uiSrc */
+    bitmask = bitmask & (uiSrc >> uiSrcStartBit);
+
+    /* Mask the correct set of bits in puiDest */
+    *puiDest = *puiDest | (bitmask << uiDestStartBit); /* Do i need to check proconditions? */
 
 }
 
