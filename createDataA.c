@@ -37,7 +37,7 @@ int main() {
     FILE *psFile = fopen("dataA", "w");
 
 
-    adrInstr = MiniAssembler_adr(0, 0x420444, 0x420060);
+    adrInstr = MiniAssembler_adr(0, 0x420044, 0x420060);
     movInstr = MiniAssembler_mov(1, 'A');
     strbInstr = MiniAssembler_strb(1, 0);
     bInstr = MiniAssembler_b(0x40089c, 0x42006c);
