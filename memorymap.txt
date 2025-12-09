@@ -109,7 +109,7 @@ Epilog and return 0
 Data Memory:
   Address (in hex)  |  Content (in hex)  |           Description
 -------------------------------------------------------------------------------
-  0x420444          |  0x44              | The grade which the student recieves
+  0x420044          |  0x44              | The grade which the student recieves
 
 
 BSS Memory:
