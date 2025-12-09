@@ -14,7 +14,7 @@ int main() {
     char name[] = "David";
 
     /* Alignment padding (4-byte instruction alignment) */
-    char alignment[] = "g";
+    char alignment[] = "gg";
 
     /* adr x0, grade */
     unsigned int adrInstr;
@@ -45,8 +45,8 @@ int main() {
     /* Write name to top of buffer */
     fwrite(&name, strlen(name) + 1, 1, psFile);
 
-    /* Write two bytes of null padding for instruction alignment */
-    fwrite(&alignment, strlen(alignment) + 1, 1, psFile);
+    /* Write two bytes of padding for instruction alignment */
+    fwrite(&alignment, strlen(alignment), 1, psFile);
 
     /* Write assembly code instructions */
     fwrite(&adrInstr, sizeof(int), 1, psFile);
