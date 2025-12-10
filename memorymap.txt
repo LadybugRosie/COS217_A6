@@ -128,7 +128,7 @@ BSS Memory:
   0x420062          |  name[10]            | adr               | space (0x20)
   0x420063          |  name[11]            | adr               | i
   0x420064          |  name[12]            | mov               | s
-  0x420065          |  name[13]            | mov               | 
+  0x420065          |  name[13]            | mov               | space (0x20)
   0x420066          |  name[14]            | mov               | y
   0x420067          |  name[15]            | mov               | o
   0x420068          |  name[16]            | strb              | u
