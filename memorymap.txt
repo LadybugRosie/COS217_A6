@@ -140,21 +140,21 @@ BSS Memory:
   0x42006E          |  name[22]            | b                 | d
   0x42006F          |  name[23]            | b                 | e
   0x420070          |  name[24]            |                   | .
-  0x420071          |  name[25]            |                   | \n
-  0x420072          |  name[26]            |                   | \0
-  0x420073          |  name[27]            |                   | padding
+  0x420071          |  name[25]            |                   | %
+  0x420072          |  name[26]            |                   | c
+  0x420073          |  name[27]            |                   | \0
   0x420074          |  name[28]            |                   | adr
   0x420075          |  name[29]            |                   | adr
   0x420076          |  name[30]            |                   | adr
   0x420077          |  name[31]            |                   | adr
-  0x420078          |  name[32]            |                   | b
-  0x420079          |  name[33]            |                   | b
-  0x42007A          |  name[34]            |                   | b
-  0x42007B          |  name[35]            |                   | b
-  0x42007C          |  name[36]            |                   |
-  0x42007D          |  name[37]            |                   |
-  0x42007E          |  name[38]            |                   |
-  0x42007F          |  name[39]            |                   |
+  0x420078          |  name[32]            |                   | mov
+  0x420079          |  name[33]            |                   | mov
+  0x42007A          |  name[34]            |                   | mov
+  0x42007B          |  name[35]            |                   | mov
+  0x42007C          |  name[36]            |                   | b
+  0x42007D          |  name[37]            |                   | b
+  0x42007E          |  name[38]            |                   | b
+  0x42007F          |  name[39]            |                   | b
   0x420080          |  name[40]            |                   |
   0x420081          |  name[41]            |                   |
   0x420082          |  name[42]            |                   |
