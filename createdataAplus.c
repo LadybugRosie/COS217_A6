@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* createdataAplus.c                                                  */
-/* Author: David Hovey                                                */
+/* Author: David Hovey and Alyssa Paolicchi                           */
 /*--------------------------------------------------------------------*/
 /*
    Produces a file called dataAplus which causes the grader

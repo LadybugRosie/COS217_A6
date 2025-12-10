@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* miniassembler.c                                                    */
-/* Author: Bob Dondero, Donna Gabai                                   */
+/* Author: David Hovey and Alyssa Paolicchi                           */
 /*--------------------------------------------------------------------*/
 
 #include "miniassembler.h"
@@ -38,8 +38,7 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
     bitmask = bitmask & (uiSrc >> uiSrcStartBit);
 
     /* Mask the correct set of bits in puiDest */
-    *puiDest = *puiDest | (bitmask << uiDestStartBit); /* Do i need to check proconditions? */
-
+    *puiDest = *puiDest | (bitmask << uiDestStartBit);
 }
 
 /*--------------------------------------------------------------------*/

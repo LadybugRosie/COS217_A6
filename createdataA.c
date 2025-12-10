@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* createdataA.c                                                      */
-/* Author: David Hovey                                                */
+/* Author: David Hovey and Alyssa Paolicchi                           */
 /*--------------------------------------------------------------------*/
 /*
   Produces a file called dataA which causes the grader program
