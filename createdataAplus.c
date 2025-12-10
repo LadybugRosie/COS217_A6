@@ -51,8 +51,8 @@ int main() {
 
     /* Write assembly code instructions */
     fwrite(&adrInstr, sizeof(int), 1, psFile);
-    fwrite(&bInstr, sizeof(int), 1, psFile);
     fwrite(&movInstr, sizeof(int), 1, psFile);
+    fwrite(&bInstr, sizeof(int), 1, psFile);
 
     /* Write padding to fill up remaining 8 bytes of 48 byte buffer */
     fwrite(&paddingfinal, strlen(paddingfinal), 1, psFile);
