@@ -7,4 +7,5 @@ add_executable(COS217_A6
         createdataB.c
         miniassembler.c
         miniassembler.c
-        createDataA.c)
+        createDataA.c
+        createdataAplus.c)

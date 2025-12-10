@@ -121,48 +121,48 @@ BSS Memory:
   0x42005B          |  name[3]             | i                 | i
   0x42005C          |  name[4]             | d                 | d
   0x42005D          |  name[5]             | \0                | \0
-  0x42005E          |  name[6]             | \0        
-  0x42005F          |  name[7]             | \0
-  0x420060          |  name[8]             | adr
-  0x420061          |  name[9]             | adr
-  0x420062          |  name[10]            | adr
-  0x420063          |  name[11]            | adr
-  0x420064          |  name[12]            | mov
-  0x420065          |  name[13]            | mov
-  0x420066          |  name[14]            | mov
-  0x420067          |  name[15]            | mov
-  0x420068          |  name[16]            | strb
-  0x420069          |  name[17]            | strb
-  0x42006A          |  name[18]            | strb
-  0x42006B          |  name[19]            | strb
-  0x42006C          |  name[20]            | b
-  0x42006D          |  name[21]            | b
-  0x42006E          |  name[22]            | b
-  0x42006F          |  name[23]            | b
-  0x420070          |  name[24]            |
-  0x420071          |  name[25]            |
-  0x420072          |  name[26]            |
-  0x420073          |  name[27]            |
-  0x420074          |  name[28]            |
-  0x420075          |  name[29]            |
-  0x420076          |  name[30]            |
-  0x420077          |  name[31]            |
-  0x420078          |  name[32]            |
-  0x420079          |  name[33]            |
-  0x42007A          |  name[34]            |
-  0x42007B          |  name[35]            |
-  0x42007C          |  name[36]            |
-  0x42007D          |  name[37]            |
-  0x42007E          |  name[38]            |
-  0x42007F          |  name[39]            |
-  0x420080          |  name[40]            |
-  0x420081          |  name[41]            |
-  0x420082          |  name[42]            |
-  0x420083          |  name[43]            |
-  0x420084          |  name[44]            |
-  0x420085          |  name[45]            |
-  0x420086          |  name[46]            |
-  0x420087          |  name[47]            |
+  0x42005E          |  name[6]             | padding           | padding
+  0x42005F          |  name[7]             | padding           | padding
+  0x420060          |  name[8]             | adr               | A
+  0x420061          |  name[9]             | adr               | +
+  0x420062          |  name[10]            | adr               | space (0x20)
+  0x420063          |  name[11]            | adr               | i
+  0x420064          |  name[12]            | mov               | s
+  0x420065          |  name[13]            | mov               | 
+  0x420066          |  name[14]            | mov               | y
+  0x420067          |  name[15]            | mov               | o
+  0x420068          |  name[16]            | strb              | u
+  0x420069          |  name[17]            | strb              | r
+  0x42006A          |  name[18]            | strb              | space (0x20)
+  0x42006B          |  name[19]            | strb              | g
+  0x42006C          |  name[20]            | b                 | r
+  0x42006D          |  name[21]            | b                 | a
+  0x42006E          |  name[22]            | b                 | d
+  0x42006F          |  name[23]            | b                 | e
+  0x420070          |  name[24]            |                   | .
+  0x420071          |  name[25]            |                   | \n
+  0x420072          |  name[26]            |                   | \0
+  0x420073          |  name[27]            |                   | padding
+  0x420074          |  name[28]            |                   | adr
+  0x420075          |  name[29]            |                   | adr
+  0x420076          |  name[30]            |                   | adr
+  0x420077          |  name[31]            |                   | adr
+  0x420078          |  name[32]            |                   | b
+  0x420079          |  name[33]            |                   | b
+  0x42007A          |  name[34]            |                   | b
+  0x42007B          |  name[35]            |                   | b
+  0x42007C          |  name[36]            |                   |
+  0x42007D          |  name[37]            |                   |
+  0x42007E          |  name[38]            |                   |
+  0x42007F          |  name[39]            |                   |
+  0x420080          |  name[40]            |                   |
+  0x420081          |  name[41]            |                   |
+  0x420082          |  name[42]            |                   |
+  0x420083          |  name[43]            |                   |
+  0x420084          |  name[44]            |                   |
+  0x420085          |  name[45]            |                   |
+  0x420086          |  name[46]            |                   |
+  0x420087          |  name[47]            |                   |
 
 
 Stack Memory:

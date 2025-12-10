@@ -4,11 +4,10 @@
 /*--------------------------------------------------------------------*/
 
 #include "miniassembler.h"
-#include <stddef.h>
 #include <stdio.h>
 #include <string.h>
 
-/* Main comment */
+/* MAIN COMMENT */
 int main() {
     /* User name */
     char name[] = "David";
