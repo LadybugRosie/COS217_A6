@@ -33,10 +33,11 @@ int main() {
     /* Return address that points to the top of the instructions */
     unsigned int returnAddress = 0x420074;
 
+    /* Create a file */
+    FILE *psFile = fopen("dataAplus", "w");
+
     adrInstr = MiniAssembler_adr(0, 0x420060, 0x420074);
     bInstr = MiniAssembler_adr(0, 0x4008ac, 0x420078);
-
-    FILE *psFile = fopen("dataA", "w");
 
     /* Write name to top of buffer */
     fwrite(&name, strlen(name) + 1, 1, psFile);
