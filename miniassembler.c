@@ -115,19 +115,3 @@ unsigned int MiniAssembler_b(unsigned long ulAddr,
 
     return uiInstruction;
 }
-
-unsigned int MiniAssembler_bl(unsigned long ulAddr,
-   unsigned long ulAddrOfThisInstr)
-{
-    /* Base instruction code */
-    unsigned int uiInstruction = 0x14000000;
-
-    /* Calculate the shifted offset */
-    int label = (int) (((long) ulAddr - (long) ulAddrOfThisInstr) / 4 );
-
-    /* Sets label in bits [0...25] */
-    setField((unsigned int) label, 0, &uiInstruction, 0, 26);
-
-    return uiInstruction;
-}
-
