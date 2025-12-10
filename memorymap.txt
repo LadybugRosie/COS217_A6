@@ -168,9 +168,9 @@ BSS Memory:
 Stack Memory:
       Offset        |       Description
 -------------------------------------------------
-0                   |    x19  
-8                   |    x20
-16                  |    x21
+0                   |    readString's X19  
+8                   |    readString's X20
+16                  |    readString's X21
 24                  |    readString's X30
 32                  |    buf[0]-buf[7]
 40                  |    buf[8]-buf[15]
@@ -179,6 +179,8 @@ Stack Memory:
 64                  |    buf[32]-buf[39]
 72                  |    buf[40]-buf[47]
 80                  |    getName's X30
-
+88                  |    getName: unused
+96                  |    main's X19
+104                 |    main's X30
 
 
