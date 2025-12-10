@@ -38,8 +38,7 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
     bitmask = bitmask & (uiSrc >> uiSrcStartBit);
 
     /* Mask the correct set of bits in puiDest */
-    *puiDest = *puiDest | (bitmask << uiDestStartBit); /* Do i need to check proconditions? */
-
+    *puiDest = *puiDest | (bitmask << uiDestStartBit);
 }
 
 /*--------------------------------------------------------------------*/
