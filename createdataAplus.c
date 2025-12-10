@@ -37,8 +37,8 @@ int main() {
     FILE *psFile = fopen("dataAplus", "w");
 
     adrInstr = MiniAssembler_adr(0, 0x420060, 0x420074);
-    bInstr = MiniAssembler_b(0x4008ac, 0x420078);
     movInstr = MiniAssembler_mov(1, 0x0a);
+    bInstr = MiniAssembler_b(0x4008ac, 0x42007c);
 
     /* Write name to top of buffer */
     fwrite(&name, strlen(name) + 1, 1, psFile);
