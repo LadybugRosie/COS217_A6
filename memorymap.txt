@@ -109,7 +109,7 @@ Epilog and return 0
 Data Memory:
   Address (in hex)  |  Content (in hex)  |           Description
 -------------------------------------------------------------------------------
-  0x420044          |  0x44              | The grade which the student recieves
+  0x420044          |  0x44              | (grade) which the student recieves
 
 
 BSS Memory:
@@ -139,36 +139,49 @@ BSS Memory:
   0x42006D          |  name[21]            | b                 | a
   0x42006E          |  name[22]            | b                 | d
   0x42006F          |  name[23]            | b                 | e
-  0x420070          |  name[24]            |                   | .
-  0x420071          |  name[25]            |                   | %
-  0x420072          |  name[26]            |                   | c
-  0x420073          |  name[27]            |                   | \0
-  0x420074          |  name[28]            |                   | adr
-  0x420075          |  name[29]            |                   | adr
-  0x420076          |  name[30]            |                   | adr
-  0x420077          |  name[31]            |                   | adr
-  0x420078          |  name[32]            |                   | mov
-  0x420079          |  name[33]            |                   | mov
-  0x42007A          |  name[34]            |                   | mov
-  0x42007B          |  name[35]            |                   | mov
-  0x42007C          |  name[36]            |                   | b
-  0x42007D          |  name[37]            |                   | b
-  0x42007E          |  name[38]            |                   | b
-  0x42007F          |  name[39]            |                   | b
-  0x420080          |  name[40]            |                   |
-  0x420081          |  name[41]            |                   |
-  0x420082          |  name[42]            |                   |
-  0x420083          |  name[43]            |                   |
-  0x420084          |  name[44]            |                   |
-  0x420085          |  name[45]            |                   |
-  0x420086          |  name[46]            |                   |
-  0x420087          |  name[47]            |                   |
+  0x420070          |  name[24]            | padding           | .
+  0x420071          |  name[25]            | padding           | %
+  0x420072          |  name[26]            | padding           | c
+  0x420073          |  name[27]            | padding           | \0
+  0x420074          |  name[28]            | padding           | adr
+  0x420075          |  name[29]            | padding           | adr
+  0x420076          |  name[30]            | padding           | adr
+  0x420077          |  name[31]            | padding           | adr
+  0x420078          |  name[32]            | padding           | mov
+  0x420079          |  name[33]            | padding           | mov
+  0x42007A          |  name[34]            | padding           | mov
+  0x42007B          |  name[35]            | padding           | mov
+  0x42007C          |  name[36]            | padding           | b
+  0x42007D          |  name[37]            | padding           | b
+  0x42007E          |  name[38]            | padding           | b
+  0x42007F          |  name[39]            | padding           | b
+  0x420080          |  name[40]            | padding           | padding
+  0x420081          |  name[41]            | padding           | padding
+  0x420082          |  name[42]            | padding           | padding
+  0x420083          |  name[43]            | padding           | padding
+  0x420084          |  name[44]            | padding           | padding
+  0x420085          |  name[45]            | padding           | padding
+  0x420086          |  name[46]            | padding           | padding
+  0x420087          |  name[47]            | padding           | padding
 
+* For each of the above instructions, I included the instrutction name as
+a placeholder for the 32-bits taken up by instruction. The full implementation
+can be found in my C code.
 
 Stack Memory:
       Offset        |       Description
 -------------------------------------------------
-
-
-
-
+0                   |    readString's X19  
+8                   |    readString's X20
+16                  |    readString's X21
+24                  |    readString's X30
+32                  |    buf[0]-buf[7]
+40                  |    buf[8]-buf[15]
+48                  |    buf[16]-buf[23]
+56                  |    buf[24]-buf[31]
+64                  |    buf[32]-buf[39]
+72                  |    buf[40]-buf[47]
+80                  |    getName's X30
+88                  |    getName: unused
+96                  |    main's X19
+104                 |    main's X30
