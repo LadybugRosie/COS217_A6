@@ -42,9 +42,9 @@ int main() {
     /* Address of the 'grade = B' instruction in main */
     long returnAddress = 0x400890;
 
+    /* Open dataB for writing the crafted input bytes. */
     FILE *psFile = fopen("dataB", "w");
 
-    /* Open dataB for writing the crafted input bytes. */
     if (!psFile) {
         perror("fopen did not return a valid pointer");
         return 1;

